@@ -1,0 +1,300 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<div class="container dot">
+    <h3 class="p-1"> Your Order History </h3>
+    <div class="card">
+        <div class="box-inner">
+            <!-- <div class="d-flex d-space">
+                <div class="p-2">
+                    <p class="title">Order Placed</p>
+                    <p>25-October-2022</p>
+                </div>
+                <div class="p-2">
+                    <p class="title">Total</p>
+                    <p class="pro-cost">₹ 25,600</p>
+                </div>
+                <div class="p-2">
+                    <p class="title">Shipping To</p>
+                    <p>Naresh S</p>
+                </div>
+                <div class="p-2 ms-auto">
+                    <p class="title">OrderId #4040-23456-00000</p>
+                    <a><span>View order details</span>|<span>Invoice</span></a>
+                </div>
+            </div> -->
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6 col-md-auto">
+					<p class="title">Order Placed</p>
+					<span class="span">25-October-2022</span>
+				  </div>
+				  <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<p class="title">Total</p>
+					<span class="pro-cost">₹ 25,600</span>
+				  </div>			  
+				  <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<p class="title">Shipping To</p>
+					<span class="span">Naresh S</span>
+				  </div>
+	
+				  <div class="col-lg-2 col-6 ms-auto">
+					<p class="title">OrderId #4040-23456-00000</p>
+					<span class="spans">View order details</span> | <span class="spans">Invoice</span>
+				  </div>
+			</div>
+        </div>
+
+
+        <div class="box-content" *ngFor="let cart of CartItems let i= index">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="{{cart.ProductURL}}" class="img-fluid img-wrap" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h2 class="prd-title">{{cart.ProductName}}</h2>
+                    <p class="refund-date">Return closed on 01-Dec-2022</p>
+					
+                    <div class="d-flex">
+                        <div class="button-order bcolor">
+                            <a class="bspan" role="button">
+                             Buy it again
+                            </a>
+                          </div>
+                          <div class="button-order mx-2">
+                              <a class="button-span" role="button">
+                                View your order
+                              </a>
+                          </div>
+                    </div>
+                </div>
+				<div class="s-view">
+					<button mat-button [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon></button>
+					<mat-menu #menu="matMenu" style="margin-left:-50px">
+					  <button mat-menu-item>View Return/Refund Status</button>
+					  <button mat-menu-item> Write a Product Review </button>
+					</mat-menu>
+				</div>
+                <div class="flex-grow-0 dp-view">
+                    <div class="button-inner" role="button">
+                        View Return/Refund Status           
+                    </div>
+                    <div class="button-inner">                    
+                          Write a Product Review                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="box-inner">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6 col-md-auto">
+					<p class="title">Order Placed</p>
+					<span class="span">25-October-2022</span>
+				  </div>
+				  <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<p class="title">Total</p>
+					<span class="pro-cost">₹ 25,600</span>
+				  </div>			  
+				  <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<p class="title">Shipping To</p>
+					<span class="span">Naresh S</span>
+				  </div>
+	
+				  <div class="col-lg-2 col-6 ms-auto">
+					<p class="title">OrderId #4040-23456-00000</p>
+					<span class="spans">View order details</span> | <span class="spans">Invoice</span>
+				  </div>
+			</div>
+        </div>
+        <div class="box-content" *ngFor="let cart of CartItems let i= index">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="{{cart.ProductURL}}" class="img-fluid img-wrap" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h2 class="prd-title">{{cart.ProductName}}</h2>
+                    <p class="refund-date">Return policy ended on 01-Dec-2022</p>
+                    <div class="d-flex">
+                        <div class="button-order bcolor">
+                            <a class="bspan" role="button">
+                             Buy it again
+                            </a>
+                          </div>
+                          <div class="button-order mx-2">
+                              <a class="button-span" role="button">
+                                View your order
+                              </a>
+                          </div>
+                    </div>
+                </div>
+				<div class="s-view">
+					<button mat-button [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon></button>
+					<mat-menu #menu="matMenu" style="margin-left:-50px">
+					  <button mat-menu-item>View Return/Refund Status</button>
+					  <button mat-menu-item> Write a Product Review </button>
+					</mat-menu>
+				</div>
+                <div class="flex-grow-0 dp-view">
+                    <div class="button-inner" role="button">
+                        View Return/Refund Status           
+                    </div>
+                    <div class="button-inner">                    
+                          Write a Product Review                     
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="product-detail">
+		<h2>Recommended based on your shopping trends</h2>
+		<!--Desktop View-->
+		<div class="container d-view">
+			<div id="carouselExample" class="carousel slide" data-bs-ride="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="cards-wrapper">
+							<!-- Section-1 -->
+							<div class="row row-gutter">
+								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let addonproduct of AddOnProduct.slice(0,6) let i= index">
+									<!-- Slider 1 -->
+									 <div class="card-body">
+										<div class="text-center">
+											<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+										</div>
+										<div>
+											<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+											<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                            				<span>{{addonproduct.Ratings}}</span> </span>
+											<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+          			<div class="carousel-item">
+						<div class="cards-wrapper">
+							<!-- Section-1 -->
+							<div class="row row-gutter">
+								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let addonproduct of AddOnProduct.slice(6,12) let i= index">
+									<!-- Slider 1 -->
+									 <div class="card-body">
+										<div class="text-center">
+											<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+										</div>
+										<div>
+											<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+											<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                            				<span>{{addonproduct.Ratings}}</span> </span>
+											<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+			</div>
+		</div>
+		<!--Mobile View-->
+		<div class="container m-view">
+			<div class="scrolling-wrapper d-flex flex-row flex-nowrap">
+				<div class="col-sm-12 col-12 pr-s" *ngFor="let addonproduct of AddOnProduct let i= index">
+				<!-- Slider 1 -->
+					<div class="card-body">
+						<div class="text-center">
+							<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+						</div>
+						<div>
+						<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+							<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                            <span>{{addonproduct.Ratings}}</span> </span>
+								<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+							</div>
+						</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="product-details ">
+		<h2>Related to items you viewed</h2>
+		<!--Desktop View-->
+		<div class="container d-view">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="cards-wrapper">
+							<!-- Section-1 -->
+							<div class="row row-gutter">
+								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let viewed of ViewedItems.slice(0,6) let i= index">
+									<!-- Slider 1 -->
+									 <div class="card-body">
+										<div class="text-center">
+											<div class="product-img-wrap"> <img class="img-fluid" src="{{viewed.ProductURL}}"> </div>
+										</div>
+										<div style="margin-top: 10px;">
+											<div> <a class="product-heads">{{viewed.ProductName}} </a> </div>
+											<div class="product-rating mt-2"> <span>{{ viewed.Rate }}</span> <i class="fas {{viewed.StarsIcon}}"></i> </div> <span class="rating-text">
+                            				<span>{{viewed.Ratings}}</span> </span>
+											<div class="product-addonprice"> <span class="addon-price"> {{viewed.NewPrice}} </span> <span> <s class = "on-price">{{viewed.OldPrice}}</s></span> <span class="offer">{{viewed.Offer}}</span> </div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+          			<div class="carousel-item">
+						<div class="cards-wrapper">
+							<!-- Section-1 -->
+							<div class="row row-gutter">
+								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let viewed of ViewedItems.slice(6,12) let i= index">
+									<!-- Slider 1 -->
+									 <div class="card-body">
+										<div class="text-center">
+											<div class="product-img-wrap"> <img class="img-fluid" src="{{viewed.ProductURL}}"> </div>
+										</div>
+										<div>
+											<div> <a class="product-heads">{{viewed.ProductName}} </a> </div>
+											<div class="product-rating mt-2"> <span>{{ viewed.Rate }}</span> <i class="fas {{viewed.StarsIcon}}"></i> </div> <span class="rating-text">
+                            				<span>{{viewed.Ratings}}</span> </span>
+											<div class="product-addonprice"> <span class="addon-price"> {{viewed.NewPrice}} </span> <span> <s class = "on-price">{{viewed.OldPrice}}</s></span> <span class="offer">{{viewed.Offer}}</span> </div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+			</div>
+		</div>
+		<!--Mobile View-->
+		<div class="container m-view">
+					<div class="scrolling-wrapper d-flex flex-row flex-nowrap">
+						<div class="col-sm-12 col-12 pr-s" *ngFor="let viewed of ViewedItems let i= index">
+							<!-- Slider 1 -->
+							 <div class="card-body">
+								<div class="text-center">
+									<div class="product-img-wrap"> <img class="img-fluid" src="{{viewed.ProductURL}}"> </div>
+								</div>
+								<div>
+									<div> <a class="product-heads">{{viewed.ProductName}} </a> </div>
+									<div class="product-rating mt-2"> <span>{{ viewed.Rate }}</span> <i class="fas {{viewed.StarsIcon}}"></i> </div> <span class="rating-text">
+									<span>{{viewed.Ratings}}</span> </span>
+									<div class="product-addonprice"> <span class="addon-price"> {{viewed.NewPrice}} </span> <span> <s class = "on-price">{{viewed.OldPrice}}</s></span> <span class="offer">{{viewed.Offer}}</span> </div>
+								</div>
+							</div> 
+						</div>
+					</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

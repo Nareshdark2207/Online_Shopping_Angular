@@ -1,0 +1,306 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.text-justify{
+    padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	background-color: var(--card-bg);
+	margin-top: 5px;
+	border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+	cursor: pointer;
+}
+
+.spacing{
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 20px!important;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px){
+    .spacing{
+        padding: 18px;
+        margin-bottom: 40px;
+        margin-top: 0px!important;
+    }
+    .btn-save {
+        padding: 8px 40px!important;
+    }
+    .btn-outline{
+        padding: 8px 32px!important; 
+    }
+}
+    
+@media screen and (min-width: 820px){
+    .spacing{
+        padding: 40px;
+        margin-bottom: 25px;
+        margin-top: 0px!important;
+    }
+}
+
+@media screen and (min-width: 280px){
+    .form-label {
+        position: absolute;
+        font-family:"Montserrat", sans-serif;
+        font-size: 10px!important;
+        font-weight: 400;
+        line-height: inherit;
+        left: 1rem;
+        top: 0.75rem;
+        padding: 0 0.25rem;
+        color: rgb(135 135 135 / 93%);
+        background: #fff;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    .spacing{
+        padding: 20px;
+        margin-bottom: 2.5rem;
+        margin-top: 70px!important;
+    }
+}
+
+.text-justify h2{
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.form-check-label{
+    font-weight: 400;
+    font-family:"Montserrat", sans-serif;
+}
+
+.form-check-label span{
+    font-weight: 400;
+    font-size: 10px;
+    color:#8f8e8e;
+    font-family:"Montserrat", sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    font-family:"Montserrat", sans-serif;;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    text-transform: unset;
+    box-shadow: none!important;
+    transition: all 0.3s ease-in-out;
+}
+.btn-save {
+    padding: 0.5rem 6.5rem;
+    margin-left: 1rem;
+    color: #fff;
+    background: #673ab7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    font-family:"Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top:8px;
+}
+.btn-outline {
+    padding: 0.5rem 6rem;
+    margin-left: 1rem;
+    color: #673ab7;
+    border:1px solid #673ab7;
+    background: transparent;
+    box-shadow: none!important;
+    font-family:"Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top:8px;
+}
+
+.form-control {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    position: absolute;
+    font-family:"Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: inherit;
+    left: 1rem;
+    top: 0.75rem;
+    padding: 0 0.25rem;
+    color: rgb(135 135 135 / 93%);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.form-input {
+    position: absolute;
+    font-family:"Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    resize: none;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    border: 1.5px solid var(--color-grays);
+    color: rgb(135 135 135 / 93%);
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.form-input::placeholder {
+    opacity: 0;
+    visibility: hidden;
+    color: transparent;
+}
+.form-input:focus {
+    outline: none;
+}
+.form-input:focus ~ .form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(135 135 135 / 93%);
+    transition: all 0.2s ease-in-out;
+}
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+    top: -0.75rem;
+    left: 1rem;
+    z-index: 9;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-inform {
+    padding: 0 1rem 0;
+}
+
+
+.addresstype{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.mention{
+    position: relative;
+    left: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.checklist {
+    margin-top: 1rem;
+}
+
+.nav-icon{
+    padding: 8px 3px;
+    margin-right: 1px;
+    font-size: 20px;
+    height: auto;
+}
+
+.progress-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+.progress-step {
+    text-align: center;
+    position: relative;
+}
+.progress-step:before, .progress-step:after {
+    background-color: #673ab7;
+    content: "";
+    height: 2px;
+    position: absolute;
+    z-index: -1;
+    top: 24px;
+}
+.progress-step:after {
+    left: 50%;
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .progress-step:first-of-type:before {
+        right: 50%;
+        width: 50%;
+   }
+}
+@media screen and (max-width: 640px) {
+    .progress-step:first-of-type:before, .progress-step:last-of-type:after {
+        background-color: white !important;
+   }
+}
+.progress-step:last-of-type:after {
+    left: 50%;
+    width: 50%;
+}
+.progress-step .step-count {
+    background-color: #673ab7;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    z-index: 100;
+    border: 7px solid #f6f6ff;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.progress-step.is-active .step-description {
+    font-weight: 600;
+    font-family:"Montserrat", sans-serif;
+    color:#673ab7;
+}
+.progress-step.is-active:after {
+    background-color: #BDBDBD;
+}
+.progress-step.is-active ~ .progress-step .step-count {
+    background-color: #BDBDBD;
+}
+.progress-step.is-active ~ .progress-step:after {
+    background-color: #BDBDBD;
+}
+.step-description {
+    font-size: 12px;
+    font-weight: 500;
+    font-family:"Montserrat", sans-serif;
+    color:#BDBDBD;
+}

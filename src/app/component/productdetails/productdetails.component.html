@@ -1,0 +1,531 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<div class="container">
+		<div class="row wrapper">
+			<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<div class="product-imgs">
+					
+					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" >
+						<div class="carousel-inner img-item">
+						<div class="carousel-item active">
+							<img src="./assets/img/1-1.png" class="img-fluid d-block" alt="...">
+						</div>
+						<div class="carousel-item" >
+							<img src="./assets/img/1-2.png" class="img-fluid d-block" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/img/1-4.png" class="img-fluid d-block" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/img/1-3.png" class="img-fluid d-block" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/img/1-5.png" class="img-fluid d-block" alt="...">
+						</div>
+						</div>				 
+					
+						<div id="thumbcarousel" class="carousel-indicators">
+						<div class="active thumbnail" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+							<img src="./assets/img/1-1.png" class="img-fluid d-block w-60" alt="...">
+						</div>
+						<div class="thumbnail" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+							<img src="./assets/img/1-2.png" class="img-fluid d-block w-60" alt="...">
+						</div>
+						<div class="thumbnail" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+							<img src="./assets/img/1-4.png" class="img-fluid d-block w-60" alt="...">
+						</div>
+						<div class="thumbnail" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+							<img src="./assets/img/1-3.png" class="img-fluid d-block w-60" alt="...">
+						</div>
+						<div class="thumbnail" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">
+							<img src="./assets/img/1-5.png" class="img-fluid d-block w-60" alt="...">
+						</div>				
+
+						<button class="carousel-control-prev p-icon" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next n-icon" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						</div>					
+					</div>
+
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4"> 
+							<!--button type="submit" class="btn btn-sunflower" [disabled]="isLoading" (click)="ItemsAdded()">
+								<i class="fa-solid fa-cart-shopping"></i>&nbsp; {{btnVal}}
+								<i class="fa-solid fa-spinner spinner" *ngIf="isLoading"></i>
+							</button--> 
+							<div style="text-align:center">
+								<button class="btn btn-sunflower" [disabled]="isLoading" (click)="ItemsAdded()">								
+									<i class="fa-solid fa-spinner spinner" *ngIf="isLoading"></i>
+									<i class="fa-solid fa-cart-shopping"></i>&nbsp; {{btnVal}}							
+								</button>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4"> <a class="btn btn-dark-blue" routerLink="/selectaddress"><i class="fa-solid fa-bolt-lightning"></i>&nbsp; BUY NOW</a> </div>
+					</div>
+					</div>
+
+				</div>
+			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+				<div class="product-content">
+					<p class="product-store">Visit Canon Store</p>
+					<h2 class="product-title">Canon EOS M50 Mirrorles Camera EF-M15-45mm STM Lens (Black)</h2>
+					<div class="product-rating"> <span>4.7</span> <i class="fas fa-star"></i> </div> <span class="rate-text">
+						<span>17,806 Ratings&nbsp;</span> <span>&amp;</span> <span>&nbsp;1,368 Reviews</span> </span>
+					<div class="product-price"> <span class="new-price"> ₹ 57,890 </span> <span> <s class = "old-price">₹ 60,999</s></span> <span class="offerer">40% off</span> </div>
+					<div class="bestoff">
+						<div class="d-flex">
+							<div class="p-2"> <span class="tag"><i class="fa-solid fa-tag"></i></span> </div>
+							<div class="p-2"> <span class="text-wrapper"> Best Offers</span> </div>
+						</div>
+						<ul class="list-style">
+							<li class="down"> <span> Bank Offer Save upto 5%off based on your purchase maximum 2,000 on wallet T&C </span> </li>
+							<li class="down"> <span>Save upto 150% cashback everytime on shopping. <a>Apply Now</a></span> </li>
+							<li class="down"> <span>Get 10% cashback up to Rs. 50 when you shop for ₹1 </span> </li>
+							<li class="down"> <span>10% Instant Discount up to INR 300 on Federal Bank Cards. Minimum Trxn is INR 1000.</span> </li>
+							<li class="down"> <span>Get GST invoice and save up to 28% on business purchases.</span> </li>
+							<li class="down"> <span>₹ 150 cashback & ₹1,550 welcome rewards on PNB Credit Card . 10% cashback every time on shopping. Apply now! </span> </li>						
+						</ul>
+					</div>
+					<div class="row justify-content-md-center">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-2">
+							<div class="color">
+								<h5>Color</h5>
+								<ul>
+									<li>
+										<a href="#!" class="colors color-bdot1 active"></a>
+									</li>
+									<li>
+										<a href="#!" class="colors color-bdot2"></a>
+									</li>
+									<li>
+										<a href="#!" class="colors color-bdot3"></a>
+									</li>
+									<li>
+										<a href="#!" class="colors color-bdot4"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="variant">
+								<h5>Variant</h5>
+								<mat-form-field appearance="fill">
+									<mat-label>Select an Variant</mat-label>
+									<mat-select disableRipple>
+										<mat-option value="1">E0S-M 15-45mm Lens</mat-option>
+										<mat-option value="2">E0S-M 15-45mm STM Lens</mat-option>
+										<mat-option value="3">E0S-M 15-45mm USM Lens</mat-option>
+									</mat-select>
+								</mat-form-field>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-md-center mtspace">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-2">
+							<div class="variant">
+								<h5>Quantity</h5>
+								<mat-form-field appearance="fill">
+									<mat-label>Select an Quantity</mat-label>
+									<mat-select disableRipple>
+										<mat-option value="1">1</mat-option>
+										<mat-option value="2">2</mat-option>
+										<mat-option value="3">3</mat-option>
+										<mat-option value="4">4</mat-option>
+										<mat-option value="5">5</mat-option>
+									</mat-select>
+								</mat-form-field>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+							<h5 class="delivery-info">Delivery</h5>
+								<div class="location">
+									<div class="left-and-right-inner-addon input-container"> <i class="fa-solid fa-location-dot left"></i> <a class="right">Change</a>
+									<input type="text" class="form-control" placeholder="Enter Delivery Pincode" /> </div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="product-detail mt-4">
+			<h2>Add-on-products</h2>
+			<!--Desktop View-->
+			<div class="container d-view">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="cards-wrapper">
+								<!-- Section-1 -->
+								<div class="row row-gutter">
+									<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let addonproduct of AddOnProduct.slice(0,6) let i= index">
+										<!-- Slider 1 -->
+										<div class="cards">
+											<div class="text-center">
+												<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+											</div>
+											<div>
+												<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+												<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+								<span>{{addonproduct.Ratings}}</span> </span>
+												<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="cards-wrapper">
+								<!-- Section-1 -->
+								<div class="row row-gutter">
+									<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let addonproduct of AddOnProduct.slice(6,12) let i= index">
+										<!-- Slider 1 -->
+										<div class="card">
+											<div class="text-center">
+												<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+											</div>
+											<div>
+												<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+												<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+												<span>{{addonproduct.Ratings}}</span> </span>
+												<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+				</div>
+			</div>
+			<!--Mobile View-->
+			<div class="container m-view">
+				<div class="scrolling-wrapper d-flex flex-row flex-nowrap">
+					<div class="col-sm-12 col-12 pr-s" *ngFor="let addonproduct of AddOnProduct let i= index">
+					<!-- Slider 1 -->
+						<div class="cards">
+							<div class="text-center">
+								<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+							</div>
+							<div>
+							<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+								<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+								<span>{{addonproduct.Ratings}}</span> </span>
+									<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+								</div>
+							</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="additional-details my-3 text-center">
+			<!-- Nav pills -->
+			<ul class="nav nav-tabs justify-content-center">
+				<li class="nav-tabs nav-box"> <a class="nav-link active" data-toggle="tab" data-bs-toggle="tab" href="#home">Description</a> </li>
+				<li class="nav-item"> <a class="nav-link" data-toggle="tab" data-bs-toggle="tab" href="#menu1">Specifications</a> </li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content mt-4 mb-3">
+				<div class="tab-pane container active" id="home">
+					<div class="description">
+						<ul class="list-style">
+							<li class="down"> <span> Effective Pixels: 24.1 MP </span> </li>
+							<li class="down"> <span>Sensor Type: CMOS</span> </li>
+							<li class="down"> <span>WiFi Available </span> </li>
+							<li class="down"> <span>MP4</span> </li>
+							<li class="down"> <span>4K at 60p + 4K Frame grab + Time-Lapse</span> </li>
+							<li class="down"> <span> 2 Year Warranty Product is covered under two-year standard warranty and one-year additional warranty from the date of Product purchased by the customer. Warranty validation / Warranty period confirmation would be done through either Online Warranty Serial No. Tracking system (Service Edge) or Warranty Card and Customer Invoice date.</span> </li>
+							<li class="down"> <span>7 day seller replacement policy/brand assistance for device issues*</span> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-pane container fade" id="menu1">
+					<div class="specification">
+						<div class="header">
+							<h4>In The Box</h4>
+							<p>1 Camera, Camera Strap, Charger, Battery, Charging Cable</p>
+						</div>
+						<div class="content mt-3">
+							<h4>General Features</h4>
+							<table class="table-resp">
+								<tbody>
+									<tr>
+										<td class="head">Brand</td>
+										<td class="answer">Canon</td>
+									</tr>
+									<tr>
+										<td class="head">Model Name</td>
+										<td class="answer">EOS M50 Mark II</td>
+									</tr>
+									<tr>
+										<td class="head">Model Number</td>
+										<td class="answer">EOS M50 Mark II</td>
+									</tr>
+									<tr>
+										<td class="head">SLR Variant</td>
+										<td class="answer">EF-M15-45mm is STM Lens</td>
+									</tr>
+									<tr>
+										<td class="head">Brand Color</td>
+										<td class="answer">Black</td>
+									</tr>
+									<tr>
+										<td class="head">Type</td>
+										<td class="answer">Mirrorless</td>
+									</tr>
+									<tr>
+										<td class="head">Effective Pixels</td>
+										<td class="answer">24.1 MP</td>
+									</tr>
+									<tr>
+										<td class="head">Special Features</td>
+										<td class="answer">DIGIC 8 Image Processor; Built-In Flash; Image Stabilization</td>
+									</tr>
+									<tr>
+										<td class="head">Connector Type</td>
+										<td class="answer">HDMI</td>
+									</tr>
+									<tr>
+										<td class="head">Screen size</td>
+										<td class="answer"> 3 Inches</td>
+									</tr>
+									<tr>
+										<td class="head">Sensor Type</td>
+										<td class="answer"> CMOS</td>
+									</tr>
+									<tr>
+										<td class="head">Lens Mount</td>
+										<td class="answer">Canon EF-M Mount</td>
+									</tr>
+									<tr>
+										<td class="head">Lens Type</td>
+										<td class="answer">EF-M/STM Lens</td>
+									</tr>
+									<tr>
+										<td class="head">Flash modes</td>
+										<td class="answer">E-TTL II Flash Metering</td>
+									</tr>
+									<tr>
+										<td class="head">Video Resolution</td>
+										<td class="answer">1920 x 1080, 1280 x 720, 3840 x 2160</td>
+									</tr>
+									<tr>
+										<td class="head">Video Quality</td>
+										<td class="answer">MP4</td>
+									</tr>
+									<tr>
+										<td class="head">Microphone</td>
+										<td class="answer">Built-in Stereo Microphone (48 KHz, 16-bit x 2 Channels)</td>
+									</tr>
+									<tr>
+										<td class="head">Display Type</td>
+										<td class="answer">TFT Color Liquid Crystal Monitor</td>
+									</tr>
+									<tr>
+										<td class="head">Display Size</td>
+										<td class="answer">3 Inches</td>
+									</tr>
+									<tr>
+										<td class="head">Compatible Card</td>
+										<td class="answer">SD Card</td>
+									</tr>
+									<tr>
+										<td class="head">Battery Type</td>
+										<td class="answer">LP-E12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bottom-part">
+			<div class="container">
+				<h2 class="justify">Ratings & Reviews</h2>
+				<div class="row justify-content-center mt-4">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 ">
+						<p class="number">4.7 <span class="star">
+				<i class = "fas fa-star"></i> 
+				<i class = "fas fa-star"></i>
+				<i class = "fas fa-star"></i>
+				<i class = "fas fa-star"></i>
+				<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="num-wrap">8,219 Ratings &  198 Reviews</span></p>
+						<div class="reviews-container">
+							<div class="review"> <span class="icon-container">5 <i class="fas fa-star"></i></span>
+								<div class="progress">
+									<div class="progress-done" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div> <span class="percent">92%</span> </div>
+							<div class="review"> <span class="icon-container">4 <i class="fas fa-star"></i></span>
+								<div class="progress">
+									<div class="progress-done" role="progressbar" style="width: 78%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div> <span class="percent">75%</span> </div>
+							<div class="review"> <span class="icon-container">3 <i class="fas fa-star"></i></span>
+								<div class="progress">
+									<div class="progress-done" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div> <span class="percent">50%</span> </div>
+							<div class="review"> <span class="icon-container">2 <i class="fas fa-star"></i></span>
+								<div class="progress">
+									<div class="progress-done" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div> <span class="percent">15%</span> </div>
+							<div class="review"> <span class="icon-container">1 <i class="fas fa-star"></i></span>
+								<div class="progress">
+									<div class="progress-done" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div> <span class="percent">35%</span> </div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+						<h4 class="justify mt-2">Customer Ratings by Features</h4>
+						<div class="reviews-container">
+							<div class="review"> <span class="icon-container">Camera</span> <span class="stares">
+					<i class = "fas fa-star"></i> 
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="percents01">4.5</span> </div>
+							<div class="review"> <span class="icon-container">Lens </span> <span class="stared">
+					<i class = "fas fa-star"></i> 
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="percents02">3.7</span> </div>
+							<div class="review"> <span class="icon-container">Sensor </span> <span class="stars">
+					<i class = "fas fa-star"></i> 
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="percents">4.2</span> </div>
+							<div class="review"> <span class="icon-container">Battery </span> <span class="stars">
+					<i class = "fas fa-star"></i> 
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="percents">3.2</span> </div>
+							<div class="review"> <span class="icon-container">Quality</span> <span class="stars">
+					<i class = "fas fa-star"></i> 
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fas fa-star"></i>
+					<i class = "fa-solid fa-star-half"></i>
+				</span> <span class="percents">4.0</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="upload mt-4">
+					<h4>Image uploaded by Customer</h4>
+					<div class="grid-img">
+						<ul>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li>
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-fluid"></a>
+							</li>
+							<li class="overlay">
+								<a href="#"><img src="./assets/img/dummyimg.jpg" class="img-solo img-fluid">
+								<div class="centered">View all</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="row justify-content-between mt-4">
+						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-6">
+							<div class="d-flex flex-row dflex">
+								<div class="imgs"> <img src="./assets/img/dp.jpg" class="img-fluid"> </div>
+								<div class="infos">
+									<div class="name">
+										<h4>Naresh Lalit, India</h4>
+										<p>Reviewed on August 2022</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+							<div class="mist"> <span><i class="fa-solid fa-thumbs-up"></i>869</span> <span><i class="fa-solid fa-thumbs-down"></i>95</span> <span><i class="fa-solid fa-chevron-down"></i></span> </div>
+						</div>
+					</div>
+					<div class="rate-star"> <span class="span">4<i class="fa-solid fa-star"></i></span> <span class="subreview">Best in the market </span>
+						<p class="mainreview hr"><span class="spans">Wow,I bought this camera mainly for astography, getting used to it ull be amazed with it's result. Just buy it</span></p>
+					</div>
+					<div class="row justify-content-between mt-4">
+						<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-6">
+							<div class="d-flex flex-row dflex">
+								<div class="imgs"> <img src="./assets/img/user.png" class="img-fluid"> </div>
+								<div class="infos">
+									<div class="name">
+										<h4>Sowmya Agarwal, India</h4>
+										<p>Reviewed on August 2022</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+							<div class="mist"> <span><i class="fa-solid fa-thumbs-up"></i>869</span> <span><i class="fa-solid fa-thumbs-down"></i>95</span> <span><i class="fa-solid fa-chevron-down"></i></span> </div>
+						</div>
+					</div>
+					<div class="rate-star"> <span class="span">4<i class="fa-solid fa-star"></i></span> <span class="subreview">Best in the market </span>
+						<p class="mainreview"><span class="spans">Wow,I bought this camera mainly for astography, getting used to it ull be amazed with it's result. Just buy it</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid details-snippet1">
+			<h2 class="related-heading theme-text">Related Products</h2>
+			<div class="row row-gutter">
+				<div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mt-2" *ngFor="let relatedproduct of RelatedProduct let i= index">
+					<div class="card">
+						<div class="example-button-container d-flex justify-content-end">
+							<button mat-mini-fab>
+								<mat-icon>{{relatedproduct.WishlistIcon}}</mat-icon>
+							</button>
+						</div>
+						<div class="text-center">
+							<div class="related-product product-img"> <img class="img-fluid" src="{{relatedproduct.ProductURL}}"> </div>
+						</div>
+						<div class="stroke">
+							<div> <a class="related-title">{{relatedproduct.ProductName}}</a> </div>
+							<div class="product-rating mt-2"> <span>{{relatedproduct.Rate}}</span> <i class="fas fa-star related-icon"></i> </div> <span class="related-text">
+								<span>{{relatedproduct.Ratings}}</span> </span>
+							<div class="related-price"> <span class="on-price">{{relatedproduct.NewPrice}} </span> <span> <s class = "closeprice">{{relatedproduct.OldPrice}}</s></span> <span class="offered">{{relatedproduct.Offer}}</span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

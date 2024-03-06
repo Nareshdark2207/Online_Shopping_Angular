@@ -1,0 +1,9 @@
+.example-pizza-party {
+    color: rgb(255, 255, 255);
+    font-family:"Montserrat", sans-serif;
+}
+
+.example-pizza-party i{
+  color: rgb(255, 255, 255);
+  padding-right: 5px;
+}

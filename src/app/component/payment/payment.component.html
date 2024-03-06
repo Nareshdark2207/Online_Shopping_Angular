@@ -1,0 +1,306 @@
+<div class="container">
+
+    <div class="progress-bar spacing">
+        <div class="progress-step is-active">
+          <div class="step-count"><mat-icon class="nav-icon">shopping_cart</mat-icon></div>
+          <div class="step-description">Add Cart</div>
+        </div>
+        <div class="progress-step is-active">
+          <div class="step-count active"><mat-icon class="nav-icon"> place</mat-icon></div>
+          <div class="step-description">Address</div>
+        </div>
+        <div class="progress-step">
+          <div class="step-counter"><mat-icon class="nav-icon">payment</mat-icon></div>
+          <div class="step-description">Pay and Checkout</div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="radio">
+                            <input id="radio-1" name="radio" type="radio" checked>
+                            <label for="radio-1" class="radio-label">Credit or Debit Card</label>
+                        </div>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="card">
+                        <h2>Enter the Card Details</h2>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-control">
+                                    <input type="text" name="name" class="form-input" placeholder="none" required>
+                                    <label for="name" class="form-label">Card Number</label>
+                                    <span class="input-group-append">                                       
+                                            <i class="fa-solid fa-credit-card"></i> 
+                                    </span>               
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-control">
+                                    <input type="text" name="name" class="form-input" placeholder="none" required>
+                                    <label for="name" class="form-label">Name on Card</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-control">
+                                    <input type="text" name="name" class="form-input" placeholder="MM/YY" required>
+                                    <label for="name" class="form-label">Expiry Date</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-control">
+                                    <input type="text" name="name" class="form-input" placeholder="none" required>
+                                    <label for="name" class="form-label">CVV</label>
+                                    <span class="input-group-append">
+                                        <i class="fa-solid fa-circle-question"></i> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Save card details for Later
+                            </label>
+                        </div>
+
+                        <div class="text-start mt-2">
+                            <button type="button" routerLink="/checkout" class="btn btn-save" >Pay ₹ 2,40,909 </button>
+                        </div>
+
+                        <div class="form-check mt-2 data">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <label class="form-check-label" >
+                                Add and secure your card as per guidelines
+                            </label>
+                        </div>
+
+                        <div class="save-data">
+                            <h2>Saved Cards</h2>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        1234-XXXX-XXXX-5678<span>Delete</span>
+                                        </label>
+                                        <a>State Bank <b>|</b> <img src="./assets/img/ms.png" class="img-fluid"></a>                                      
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                        5678-XXXX-XXXX-4321 <span>Delete</span>
+                                        </label>
+                                        <a>HDFC Bank <b>|</b> <img src="./assets/img/vs.png" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="radio">
+                            <input id="radio-2" name="radio" type="radio">
+                            <label for="radio-2" class="radio-label">Netbanking</label>
+                        </div>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <h2>Popular Banks</h2>
+                            <div class="mention">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        State Bank of India
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Axis Bank
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Central bank of India
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                       Canara Bank
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                    <label class="form-check-label" for="flexRadioDefault5">
+                                       ICICI Bank
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                                    <label class="form-check-label" for="flexRadioDefault6">
+                                      Kotak Mahindra Bank
+                                    </label>
+                                </div>
+                            </div>
+                            <h2 class="mt-0">Other Banks</h2>
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                                    <mat-form-field appearance="fill" class="desire">
+                                        <mat-label>Select your Bank</mat-label>
+                                        <mat-select disableRipple>
+                                          <mat-option value="1">Federal Bank</mat-option>
+                                          <mat-option value="2">Indian Overseas Bank</mat-option>
+                                          <mat-option value="3">Karur Vysya Bank</mat-option>
+                                          <mat-option value="4">City Union Bank</mat-option>
+                                          <mat-option value="5">Yes Bank Ltd</mat-option>
+                                        </mat-select>
+                                    </mat-form-field> 
+                                </div>
+                            </div>
+                            <div class="text-end mt-2">
+                                <button type="button" routerLink="/checkout" class="btn btn-save" >Pay ₹ 2,40,909</button>
+                            </div>                                    
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="radio">
+                            <input id="radio-3" name="radio" type="radio">
+                            <label for="radio-3" class="radio-label">UPI</label>
+                        </div>                     
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="row mb-ss">
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">                              
+                                        <div class="form-control">
+                                            <input type="text" name="name" class="form-input" placeholder="none" required>
+                                            <label for="name" class="form-label">Enter UPI ID</label>
+                                            <span class="input-group-append append">                                       
+                                                    <a class="confirm">Verify</a> 
+                                            </span>               
+                                        </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <div class="text-justify mt-2">
+                                        <button type="button" routerLink="/checkout"  class="btn btn-save" >Pay ₹ 2,40,909</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="radio">
+                            <input id="radio-4" name="radio" type="radio">
+                            <label for="radio-4" class="radio-label">Wallet</label>
+                        </div>                        
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                            <div class="card">
+                                <div class="row mb-ss">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">                              
+                                            <div class="form-control">
+                                                <input type="text" name="name" class="form-input" placeholder="none" required>
+                                                <label for="name" class="form-label">Enter Wallet Number</label>
+                                                <span class="appends">                                       
+                                                        <a class="confirm">Link Now</a> 
+                                                </span>               
+                                            </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                        <div class="text-justify mt-2">
+                                            <button type="button" routerLink="/checkout"  class="btn btn-save" >Pay ₹ 2,40,909</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div class="radio">
+                            <input id="radio-5" name="radio" type="radio">
+                            <label for="radio-5" class="radio-label">Cash On Delivery</label>
+                        </div> 
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="shpng">
+                            <p>FREE Shipping</p>
+                            <div class="text-justify mt-2">
+                                <button type="button" routerLink="/checkout" class="btn btn-save" >Confirm Order</button>
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-4" >
+			<div class="cards" *ngFor="let price of PriceItems let i= index" >
+				<div class="row gutter">
+					<h2 class="psummary">{{price.Summary}}</h2>
+					<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-6">
+						<h5>{{price.List}}</h5>
+						<h5>{{price.Discount}}</h5>
+						<h5>{{price.Tax}}</h5>
+						<h5>{{price.Charge}}</h5> </div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+						<h5>{{price.ProductList}}</h5>
+						<h5>{{price.ProductDiscount}}</h5>
+						<h5>{{price.ProductTax}}</h5>
+						<h5 class="free">{{price.Delivery}}</h5> </div>
+				</div>
+				<div class="container-fluid">
+					<div class="alert alert-success" role="alert"> {{price.Alert}} </div>
+					<hr class="underline"> </div>
+				<div class="row styling">
+					<div class="col-xl-9 col-lg-9 col-md-9 col-sm-6 col-12">
+						<p>{{price.Total}}</p>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+						<p class="prize">{{price.TotalPrice}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+</div>

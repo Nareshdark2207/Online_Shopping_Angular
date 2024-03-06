@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div class="container">
+        <div class="file-wrapper">
+            <h1>Export Image with a custom Cropper</h1>
+            <div class="file-icon">
+                <i class="fas fa-folder-open fa-3x"></i>
+                <span class="icon-shadow"></span>
+            
+                <div class="text-center wrap-top">
+                    <label id ="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                        <input class="input-file" type="file" (change)="fileChangeEvent($event)" />
+                        Click to Upload
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container spacing">
+        <div class="img-edit">
+            <h5>Image Cropper </h5>
+            <image-cropper class="img-crop"
+            [imageChangedEvent]="imageChangedEvent"
+            [maintainAspectRatio]="true"
+            [aspectRatio]="4 / 3"
+            format="png"
+            (imageCropped)="imageCropped($event)"
+            (imageLoaded)="imageLoaded()"
+            (cropperReady)="cropperReady()"
+            (loadImageFailed)="loadImageFailed()">
+        </image-cropper>
+        </div>
+
+        <div class="img-prev">
+            <h5>Image Preview </h5>
+         <img class="img-cropper" [src]="croppedImage" />
+        </div>
+    </div>
+</div>

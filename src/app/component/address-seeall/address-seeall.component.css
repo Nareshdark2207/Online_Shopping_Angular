@@ -1,0 +1,289 @@
+
+html, body {
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-family: "Montserrat", sans-serif;
+    color: #4b4b4b;
+    counter-reset: step-count;
+}
+.progress-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+.progress-step {
+    text-align: center;
+    position: relative;
+}
+.progress-step:before, .progress-step:after {
+    background-color: #673ab7;
+    content: "";
+    height: 2px;
+    position: absolute;
+    z-index: -1;
+    top: 24px;
+}
+.progress-step:after {
+    left: 50%;
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .progress-step:first-of-type:before {
+        right: 50%;
+        width: 50%;
+   }
+}
+@media screen and (max-width: 640px) {
+    .progress-step:first-of-type:before, .progress-step:last-of-type:after {
+        background-color: white !important;
+   }
+}
+.progress-step:last-of-type:after {
+    left: 50%;
+    width: 50%;
+}
+.progress-step .step-count {
+    background-color: #673ab7;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    z-index: 100;
+    border: 7px solid #f6f6ff;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.progress-step.is-active .step-description {
+    font-weight: 600;
+    font-family:"Montserrat", sans-serif;
+    color:#673ab7;
+}
+.progress-step.is-active:after {
+    background-color: #BDBDBD;
+}
+.progress-step.is-active ~ .progress-step .step-count {
+    background-color: #BDBDBD;
+}
+.progress-step.is-active ~ .progress-step:after {
+    background-color: #BDBDBD;
+}
+.step-description {
+    font-size: 12px;
+    font-weight: 500;
+    font-family:"Montserrat", sans-serif;
+    color:#BDBDBD;
+}
+
+.spacing{
+    padding: 40px;
+    margin-bottom: 25px;
+    margin-top: 30px!important;
+}
+
+.nav-icon{
+    padding: 8px 3px;
+    margin-right: 1px;
+    font-size: 20px;
+    height: auto;
+}
+
+.text-justify{
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+    bottom: 30px;
+}
+
+.text-justify h2{
+    font-family:"Montserrat", sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 1rem;
+}
+
+.text-justify .more{
+    font-family:"Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3197ee;
+    cursor: pointer;
+}
+
+.more span i{
+   color: #3197ee;
+   cursor: pointer;
+}
+
+.deflex{
+    gap: 1%;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px; 
+}
+
+.radio {
+    margin: 8px 8px -5px 10px;
+    line-height: 30px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 13px;
+}
+.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.radio input[type="radio"] + .radio-label:before {
+    content: '';
+    background: #f4f4f4;
+    border-radius: 100%;
+    border: 1px solid #b4b4b4;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    top:4px;
+    margin-right: 1em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked + .radio-label:before {
+    background-color: #3197ee;
+    box-shadow: inset 0 0 0 3.5px #f4f4f4;
+    border: 1px solid #3197ee;
+}
+.radio input[type="radio"]:focus + .radio-label:before {
+    outline: none;
+    border-color: #3197ee;
+}
+.radio input[type="radio"]:disabled + .radio-label:before {
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+}
+.radio input[type="radio"] + .radio-label:empty:before {
+    margin-right: 0;
+}
+
+.radio p{
+    position: relative;
+    left:32px;
+}
+
+.radio .type{
+    background: #dbe5ff;
+    padding: 5px 8px;
+    font-size: 10px;
+    border-radius: 4px;
+    margin-left: 5px; 
+    color:#555454;
+    text-decoration: none;
+}
+.filter{
+    text-decoration: none!important;
+}
+
+.filter .delete{
+    color:#3197ee;
+    position: relative;
+    top: -12px;
+    left: 50px;
+}
+
+.filter .edit{
+    color:#3197ee;
+    position: relative;
+    top:-12px;
+    left:32px;
+}
+
+.radio .default{
+    background: #dddddd;
+    padding: 5px 8px;
+    font-size: 10px;
+    border-radius: 4px;
+    margin-left: 5px; 
+    color:#555454;
+    text-decoration: none;
+}
+
+.text-end {
+    gap: 2rem;
+    padding: 20px;
+    position: relative;
+    left: 6%;
+    top: 6px;
+    display: flex;
+    cursor:pointer;
+}
+
+.text-ends {
+    gap: 2rem;
+    padding: 20px;
+    position: relative;
+    left: 6.5%;
+    display: flex;
+    cursor:pointer;
+}
+
+.btn-wrap{
+    position: relative;
+    top: 14px;
+    margin-bottom: 8px;
+}
+
+.btn-wrap .btn-address{
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 8px 14px;
+    border: 0!important;
+    font-size: 12px;
+    font-family:"Montserrat", sans-serif;
+    color: #f9f8f8;
+    background: #673ab7;
+}
+
+.btn-wrap .btn-grap {
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: 0!important;
+    font-size: 12px;
+    font-family:"Montserrat", sans-serif;
+    color: #f9f8f8;
+    background: #673ab7;
+    float: right;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+@media screen and (min-width: 280px) and (max-width: 980px){
+    .spacing{
+        padding: 30px;
+        margin-bottom: 40px;
+        margin-top: 0!important;
+    }
+    }
+    
+    @media screen and (min-width: 820px){
+        .spacing{
+            padding: 10px;
+            margin-bottom: 25px;
+            margin-top: 0px!important;
+        }
+}
+
+@media screen and (min-width: 912px) {
+    .spacing{
+        padding: 20px;
+        margin-bottom: 2.5rem;
+        margin-top: 70px!important;
+    }
+}

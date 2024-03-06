@@ -1,0 +1,98 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<div class="container">
+    <div class="progress-bar spacing">
+        <div class="progress-step is-active">
+          <div class="step-count"><mat-icon class="nav-icon">shopping_cart</mat-icon></div>
+          <div class="step-description">Add Cart</div>
+        </div>
+        <div class="progress-step is-active">
+          <div class="step-count active"><mat-icon class="nav-icon"> place</mat-icon></div>
+          <div class="step-description">Address</div>
+        </div>
+        <div class="progress-step">
+          <div class="step-counter"><mat-icon class="nav-icon">payment</mat-icon></div>
+          <div class="step-description">Pay and Checkout</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="head">Confirm your order details </h2>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2 mb-2">
+                <div class="card">
+                    <h2>Delivery Address</h2>
+                    <h5>Naresh Lalit</h5>
+                    <p>16/78 shenoy nagar,amijikarai near koyembedu bus terminal chennai,Tamilnadu Pincode-600004</p>
+                    <h4 class="mt-1">Phone number: <span>9632587410</span></h4>
+                    <p class="mt-2 mb-2 track">This order is also tracked by 8610075097</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2">
+                <div class="card">
+                    <h2>Billing Address</h2>
+                    <h5>Naresh Lalit</h5>
+                    <p class="addss">16/78 shenoy nagar, amijikarai near koyembedu bus terminal stand chennai, Tamilnadu<br>Pincode-600004</p>
+                    <h4 class="mt-2 mb-2">Phone number: <span>9632587410</span></h4>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2">
+                <div class="card" *ngFor="let price of PriceItems let i= index" >
+                    <div class="row gutter">
+                        <h2 class="psummary">{{price.Summary}}</h2>
+                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-6">
+                            <h5>{{price.List}}</h5>
+                            <h5>{{price.Discount}}</h5>
+                            <h5>{{price.Tax}}</h5>
+                            <h5>{{price.Charge}}</h5> </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <h5>{{price.ProductList}}</h5>
+                            <h5>{{price.ProductDiscount}}</h5>
+                            <h5>{{price.ProductTax}}</h5>
+                            <h5 class="free">{{price.Delivery}}</h5> </div>
+                    </div>				
+                        <hr class="underline"> 
+                    <div class="row styling">
+                        <div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-6">
+                            <p>{{price.Total}}</p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                            <p class="prix">{{price.TotalPrice}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+      <div class="cards time-line-box">
+        <h2 class="sub-head">Your Checkout Items </h2>
+        <div class="row mt-2">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-3" *ngFor="let cart of CartItems let i= index" >
+                <div class="d-flex dspace">                       
+                        <img class="img-fluid img-wrap" src="{{cart.ProductURL}}" alt="art image">                                        
+                        <div class="text-justify">
+                            <div class="flows">
+                                <p class="pl-1 date">Delivered on 20 Dec 2022</p>
+                            </div>
+                            <div class="d-flex flow">
+                                <h3 class="cart-title">{{cart.ProductName}}</h3>  
+                            </div>                              
+                            <p class="seller">{{cart.Seller}}</p>           
+                            <div class="d-flex product-price"> 
+                                <span class="new-price"> {{cart.NewPrice}} </span> 
+                               <span class="offer">| 1 Offer Applied <i class="fa-solid fa-circle-question"></i></span>                                   
+                            </div>
+                        </div>                       
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="text-end mt-4">
+        <button type="button" class="btn btn-save" routerLink="/payment"> Confirm Order</button>
+      </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,16 @@
+.head-title{
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    color:#000!important;
+}
+.headng{
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    color:#000!important; 
+}
+
+mat-chip-list{
+    border-radius: 20px!important;
+}

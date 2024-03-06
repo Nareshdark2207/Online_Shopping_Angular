@@ -1,0 +1,78 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<app-scroll-top (scrollToTop)="onScrollToTop()"></app-scroll-top>
+<div class="container-fluid" id="overlay">
+	<div class="grid-wrapper">
+		<app-filter></app-filter>	
+
+	<div class="justify-content-center mt-2" >
+		<div class="row">
+			<div class="col-xl-9 col-lg-10 col-md-8 col-sm-6 col-6">
+				<h2 class="result">Results <span class="proresult">( Showing 1 - 40 Products of 10,000 Products )</span></h2>
+				<button mat-raised-button (click)="openBottomSheet()" class="mobile-view"> Filters </button>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-4 col-sm-6 col-6">
+				<mat-form-field appearance="fill" class="example-width" >
+					<mat-label class="flex-color">Sort by</mat-label>
+					<mat-select [formControl]="sorts">
+					  <mat-option *ngFor="let sort of sortList" [value]="sort">{{sort}}</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</div>
+		</div>
+		<div class="row row-max" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="1000"
+        (scrolled)="onScroll()">
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 gutter" *ngFor="let product of objProductList._modProductDtls let i= index">
+				<div class="product-grid" routerLink="/productdetails">
+					<span class="product-sale-label">Sale</span>
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="picsart img-fluid" src="{{product.ProductURL}}">
+							<!--img class="pic-2 img-fluid" src="{{product.ProductURL}}"-->
+						</a>
+						
+						<a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+							
+							<span class="wish-icon"><i class="fa-regular fa-heart"></i></span>
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-share-nodes"></i></a></li>
+						</ul>
+					
+					<div class="product-content">
+						<div class="section-title mt-2">
+							<p class="main-title">{{product.ProductName}}</p>
+								<div class="d-flex flex-row ratingspace">
+									<div class="text-justify">
+										<div class="rating rating2"> 
+											<a href="#5" ><i class="fa-solid {{product.StarsIcon}}"></i></a> 
+											<a href="#4" ><i class="fa-solid {{product.StarsIcon}}"></i></a> 
+											<a href="#3" ><i class="fa-solid {{product.StarsIcon}}"></i></a> 
+											<a href="#2" ><i class="fa-solid {{product.StarsIcon}}"></i></a> 
+											<a href="#1" ><i class="fa-solid {{product.HalfStarIcon}}"></i></a> 
+										</div>
+									</div>
+									<div class="text-justify"> <span class="review">{{product.Ratings}}</span> </div>
+								</div>
+								<div class="d-flex flex-row" id="pricetag">
+									<h1 class="section-head">{{product.NewPrice}}</h1> <s class="section-low">{{product.OldPrice}}</s>
+									<p class="off">{{product.Offer}}</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<app-scroll-load *ngIf="scrollload"></app-scroll-load>
+
+		<div *ngIf = "!notEmptyPost" class="row pb-5">
+			<div class="col-md-12 d-flex justify-content-center">
+			  <div class="text-muted h6 alert alert-secondary p-2">No more items to show</div>
+			</div>
+		  </div>
+
+	</div>
+</div>
+</div>

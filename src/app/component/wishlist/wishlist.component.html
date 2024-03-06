@@ -1,0 +1,38 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<div class="container">
+	<div class="row spacing">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 bg-product" >
+			<h2>Wishlist(3) </h2>
+            <div class="container" >
+                
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let wish of Wishlist let i= index">
+                        <div class="card">
+                            <div class="row align-items-start">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mb-0"> 
+                                        <img class="img-fluid img-wrap" src="{{wish.ProductURL}}" alt="art image"> 
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 mb-2 mb-3">
+                                        <div class="text-justify">
+                                            <div class="d-flex flow">
+                                                <h3 class="cart-title">{{wish.ProductName}}</h3> 
+                                            </div>
+                                            <p class="pl-1">Eligible for <span>{{wish.Shipping}}</span></p>
+                                            <p class="seller">{{wish.Seller}}</p>
+                                            <div class="d-flex product-price"> <span class="new-price"> {{wish.NewPrice}} </span> <span> <s class = "old-price">{{wish.OldPrice}}</s></span> <span class="offer">{{wish.Offer}}</span>
+                                                <div class="p120 flex-fill"> <span><i class="fa-solid {{wish.DeleteIcon}}"></i></span> <span><i class="fa-solid {{wish.CartIcon}}"></i></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+	</div>
+</div>
+<app-footer></app-footer>

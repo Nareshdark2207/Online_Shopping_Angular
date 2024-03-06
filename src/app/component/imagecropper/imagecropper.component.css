@@ -1,0 +1,128 @@
+
+h1{
+  font-size: 18px;
+  font-family:"Montserrat", sans-serif; 
+  text-align: center;
+  font-weight: 500;
+  padding: 5px 0 5px 0;;
+}
+
+.spacing{
+    display: flex; 
+    gap:2rem;
+}
+
+/* Font-Family of text*/
+#idlabel {
+    padding: 8px 12px;
+    border: 0;
+    color:white;
+    border-radius: 4px;
+    background: #9a94ef;
+    font-size: 12px; 
+    font-family:"Montserrat", sans-serif; 
+    font-weight: 500!important; 
+    text-transform:capitalize!important;
+    cursor: pointer;
+  }
+  
+  /* Removes the default input */
+  input[type="file"] {
+      display: none;
+  }
+
+  .file-wrapper {
+    width: 30vw;
+    height: 30vh;
+    max-height: 500px;
+    min-height: 270px;
+    min-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    z-index: 20;
+    border-radius: 20px;
+    padding:20px;
+    box-shadow:3px 3px 15px 0px #ababab38;
+}
+
+  .file-icon {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    color: rgba(73, 80, 87, .6);
+    background-color: #dcf9ff21;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.2s;
+    border: dashed 2px #91c7d263;
+}
+
+    .wrap-top{
+        margin-top: 20px;  
+    }
+
+  .file-icon i {
+    width: 100%;
+    color: #9a94ef;
+    text-align: center;
+}
+ .file-icon .icon-shadow {
+    position: relative;
+    display: block;
+    width: 95px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #e3e5e8;
+    top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-edit{
+    width: 100%;
+    max-width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    padding:20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.img-prev{
+    width: 100%;
+    max-width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    padding:20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.img-prev h5{
+    font-size: 15px; 
+    font-family:"Montserrat", sans-serif; 
+    font-weight: 500!important; 
+}
+
+.img-edit h5{
+    font-size: 15px; 
+    font-family:"Montserrat", sans-serif; 
+    font-weight: 500!important;   
+}
+
+.img-cropper {
+    width: 100%;
+    max-width: 80%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.img-crop{
+    width: 100%;
+    max-width: 80%;
+    max-height: 100%;
+    overflow: hidden; 
+}

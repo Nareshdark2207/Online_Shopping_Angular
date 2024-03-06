@@ -1,0 +1,84 @@
+<!-- <mat-chip-list aria-label="Fish selection" selectable multiple>
+    <mat-chip>One fish</mat-chip>
+    <mat-chip>Two fish</mat-chip>
+    <mat-chip color="primary" selected>Primary fish</mat-chip>
+    <mat-chip color="accent">Accent fish</mat-chip>
+  </mat-chip-list> -->
+  <div class="justify-content-center">
+    <h2 class="head-title">Filter by <span></span></h2>
+    <p class="headng">Category</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>
+
+ <div class="justify-content-center">
+    <p class="headng mt-3">Brands</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>
+
+ <div class="justify-content-center">
+    <p class="headng mt-3">Offers</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>
+
+ <div class="justify-content-center">
+    <p class="headng mt-3">Customer Ratings</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>
+
+ <div class="justify-content-center">
+    <p class="headng mt-3">Discounts</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>
+
+ <div class="justify-content-center">
+    <p class="headng mt-3">Seller</p>
+    <mat-chip-list #chipList [multiple]="true" [selectable]="true">
+        <mat-chip *ngFor="let category of categories" #chip="matChip" (click)="category.selected ? chip.deselect() : chip.selectViaInteraction()" [selected]="category.selected" [selectable]="true"  (removed)="remove(category)" 
+        (selectionChange)="changeSelected($event, category)">
+        {{category.name}}
+        <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+        </button>
+        </mat-chip>
+    </mat-chip-list>
+ </div>

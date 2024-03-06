@@ -1,0 +1,846 @@
+{
+  
+        "ProductList": [
+            {
+            "id": "1",
+            "ProductURL": "./assets/img/1.png",
+            "ProductName": "Canon Mirrorles EOS Camera EF-M15-45mm STM Lens (Black)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 57,890",
+            "OldPrice": "₹ 69,990",
+            "Offer": "33% off"
+            },
+            {
+            "id": "2",
+            "ProductURL": "./assets/img/2.jpg",
+            "ProductName": "Mi X Series Ultra HD Android Smart LED TV Dolby Vision & Audio ",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,236 Review",
+            "NewPrice": "₹ 31,999",
+            "OldPrice": "₹ 44,990",
+            "Offer": "33% off"
+            },
+            {
+            "id": "3",
+            "ProductURL": "./assets/img/3.png",
+            "ProductName": "Men's Brown Leather Messenger & Laptop bag | Office bag",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 1,633",
+            "OldPrice": "₹ 7,999",
+            "Offer": "33% off"
+            },
+            {
+            "id": "4",
+            "ProductURL": "./assets/img/4.png",
+            "ProductName": "SONY HT-S20R 400W Bluetooth Soundbar (5.1 Channel, Black)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "9,236 Review",
+            "NewPrice": "₹ 15,990",
+            "OldPrice": "₹ 23,990",
+            "Offer": "33% off"
+            },
+            {
+            "id": "5",
+            "ProductURL": "./assets/img/5.png",
+            "ProductName": "APPLE Macbook Air M1(8GB/256 GB SSD), Space Grey",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "9,236 Review",
+            "NewPrice": "₹ 94,990",
+            "OldPrice": "₹ 99,900",
+            "Offer": "38% off"
+            },
+            {
+            "id": "6",
+            "ProductURL": "./assets/img/6.png",
+            "ProductName": "TP-Link Archer C6 Wireless Router (Gigabit Connectivity, Black, Dual Band)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 2,599",
+            "OldPrice": "₹ 4,999",
+            "Offer": "25% off"
+            },
+            {
+            "id": "7",
+            "ProductURL": "./assets/img/8.png",
+            "ProductName": "Realme Smart Watch S Auto-bright Display (Black Strap, Regular)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,739 Review",
+            "NewPrice": "₹ 4,999",
+            "OldPrice": "₹ 7,999",
+            "Offer": "52% off"
+            },
+            {
+            "id": "8",
+            "ProductURL": "./assets/img/7.png",
+            "ProductName": "Crucial BX500 3D 500 GB Desktop, Internal Solid State Drive (SSD)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,336 Review",
+            "NewPrice": "₹ 2,980",
+            "OldPrice": "₹ 4,700",
+            "Offer": "36% off"
+            },
+            {
+            "id": "9",
+            "ProductURL": "./assets/img/9.png",
+            "ProductName": "Seagate Expansion Portable 2 TB External Portable HDD (STKM1000400)(Black)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "536 Review",
+            "NewPrice": "₹ 5,599",
+            "OldPrice": "₹ 6,999",
+            "Offer": "20% off"
+            },
+            {
+            "id": "10",
+            "ProductURL": "./assets/img/10.png",
+            "ProductName": "Realme Techlife Buds Bluetooth Headset (Black,Wireless)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,973 Review",
+            "NewPrice": "₹ 1,499",
+            "OldPrice": "₹ 2,999",
+            "Offer": "50% off"
+            },
+            {
+            "id": "11",
+            "ProductURL": "./assets/img/11.png",
+            "ProductName": "ASUS ROG Strix Ryzen 7 AMD 4800H Gaming Laptop (8GB/512GB SSD)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,236 Review",
+            "NewPrice": "₹ 89,890",
+            "OldPrice": "₹ 1,09,990",
+            "Offer": "18% off"
+            },
+            {
+            "id": "12",
+            "ProductURL": "./assets/img/12.png",
+            "ProductName": "HP LaserJet Pro M128fn All-in-One Monochrome Laser Printer (Black)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "2,236 Review",
+            "NewPrice": "₹ 23,599",
+            "OldPrice": "₹ 24,932",
+            "Offer": "5% off"
+            },
+            {
+            "id": "43",
+            "ProductURL": "./assets/img/01.png",
+            "ProductName": "homezcares SENSOR EARBUDS, Smart Headphones(Wireless)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 890",
+            "OldPrice": "₹ 1,990",
+            "Offer": "53% off"
+            },
+            {
+            "id": "44",
+            "ProductURL": "./assets/img/02.png",
+            "ProductName": "cosvo ID Smart Band with wallpaper (Black Strap, Size: Free)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,236 Review",
+            "NewPrice": "₹ 1,200",
+            "OldPrice": "₹ 1,990",
+            "Offer": "78% off"
+            },
+            {
+            "id": "45",
+            "ProductURL": "./assets/img/03.png",
+            "ProductName": "MHI Smartphone VR Box for 3D Gaming and VR Videos (SmartGlasses, White)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 799",
+            "OldPrice": "₹ 999",
+            "Offer": "22% off"
+            },
+            {
+            "id": "46",
+            "ProductURL": "./assets/img/04.png",
+            "ProductName": "boAt Rockerz 255 pro in-Ear Bluetooth Neckband Smart Headphones (Wireless)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "9,236 Review",
+            "NewPrice": "₹ 1,990",
+            "OldPrice": "₹ 2,999",
+            "Offer": "50% off"
+            },
+            {
+            "id": "47",
+            "ProductURL": "./assets/img/05.png",
+            "ProductName": "IMMUTALE Wireless Earbuds Bluetooth Headset (Black)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "9,236 Review",
+            "NewPrice": "₹ 490",
+            "OldPrice": "₹ 710",
+            "Offer": "58% off"
+            },
+            {
+            "id": "48",
+            "ProductURL": "./assets/img/06.png",
+            "ProductName": "Cafune Back Cover for Vivo Y21 (Black, Dual Protection)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,236 Review",
+            "NewPrice": "₹ 199",
+            "OldPrice": "₹ 399",
+            "Offer": "80% off"
+            },
+            {
+            "id": "49",
+            "ProductURL": "./assets/img/07.png",
+            "ProductName": "Mi 33W Sonic Charge 2.0 Charger(Type C-Cable)(White)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "5,739 Review",
+            "NewPrice": "₹ 999",
+            "OldPrice": "₹ 1,999",
+            "Offer": "50% off"
+            },
+            {
+            "id": "50",
+            "ProductURL": "./assets/img/08.png",
+            "ProductName": "SanDisk SDDDC3 64 GB OTG Drive (Blue, Type A to Type C)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,336 Review",
+            "NewPrice": "₹ 780",
+            "OldPrice": "₹ 1,100",
+            "Offer": "55% off"
+            },
+            {
+            "id": "51",
+            "ProductURL": "./assets/img/09.png",
+            "ProductName": "Aroma Portable 10W Upto 10 Hours Playback Bluetooth Speaker (Army)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "536 Review",
+            "NewPrice": "₹ 499",
+            "OldPrice": "₹ 999",
+            "Offer": "75% off"
+            },
+            {
+            "id": "52",
+            "ProductURL": "./assets/img/010.png",
+            "ProductName": "FKSBLS Joker Phoenix Printed Laptop Skin Sticker Decal 15.6",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,973 Review",
+            "NewPrice": "₹ 499",
+            "OldPrice": "₹ 699",
+            "Offer": "56% off"
+            },
+            {
+            "id": "53",
+            "ProductURL": "./assets/img/011.png",
+            "ProductName": "Airtel Digital TV HD Set Top Box with Free Installation (1 Month pack)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "1,236 Review",
+            "NewPrice": "₹ 892",
+            "OldPrice": "₹ 990",
+            "Offer": "53% off"
+            },
+            {
+            "id": "54",
+            "ProductURL": "./assets/img/012.png",
+            "ProductName": "Dynotrek Waterproof Sleeve Shockproof Protective Laptop Case(Blue, 15.6 inch)",
+            "StarsIcon": "fa-star",
+            "HalfStarIcon": "fa-star-half",
+            "WishlistIcon": "favorite",
+            "Ratings": "2,236 Review",
+            "NewPrice": "₹ 399",
+            "OldPrice": "₹ 1,032",
+            "Offer": "77% off"
+            }
+        ],
+
+    "AddOnProduct": [
+        {
+            "id": "13",
+            "ProductURL":"./assets/img/1.png",
+            "ProductName":"Canon EOS M50 Mirrorles Camera EF-M15-45mm STM Lens (Black)",
+            "StarsIcon":"fa-star",
+            "HalfStarIcon":"fa-star-half",
+            "Rate":"3.8",
+            "Ratings":"19,111 Ratings",
+            "NewPrice":"₹ 57,890",
+            "OldPrice":"₹ 69,990",
+            "Offer":"13% off"
+        },
+        {
+            "id": "14",
+            "ProductURL":"./assets/img/1(2).png",
+            "ProductName":"SHOPEE HB-N106 Bayonet AF-P DX Lens Hood (55 mm, Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"12,196 Ratings",
+            "NewPrice":"₹ 599",
+            "OldPrice":"₹ 999",
+            "Offer":"38% off"
+        },
+        {
+            "id": "15",
+            "ProductURL":"./assets/img/1(3).png",
+            "ProductName":"SUPERNIC Camera 52MM Close up Lens Filter Kit For Nikon",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"17,806 Ratings",
+            "NewPrice":"₹ 190",
+            "OldPrice":"₹ 299",
+            "Offer":"57% off"
+        },
+        {
+            "id": "16",
+            "ProductURL":"./assets/img/1(4).png",
+            "ProductName":"FND 200D and 200D ll ( HOOD AND FILTER ) UV Filter (58 mm)",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"17,806 Ratings",
+            "NewPrice":"₹ 390",
+            "OldPrice":"₹ 599",
+            "Offer":"40% off"
+        },
+        {
+            "id": "17",
+            "ProductURL":"./assets/img/1(5).png",
+            "ProductName":"BOOSTY Et 60 uv + Lens Cap Lens Hood Replacment with 58mm.",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"17,806 Ratings",
+            "NewPrice":"₹ 577",
+            "OldPrice":"₹ 650",
+            "Offer":"30% off"
+        },
+        {
+            "id": "18",
+            "ProductURL":"./assets/img/1(6).png",
+            "ProductName":"Canon EOS 200ES DSLR Camera and Accessories Bag (Black).",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"15,896 Ratings",
+            "NewPrice":"₹ 999",
+            "OldPrice":"₹ 1,200",
+            "Offer":"30% off"
+        },
+        {
+            "id": "19",
+            "ProductURL":"./assets/img/1(7).png",
+            "ProductName":"SHOPEE 58mm SAFTEY UV CPL FLD Filter Kit (58 mm, Multicolor).",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"12,896 Ratings",
+            "NewPrice":"₹ 290",
+            "OldPrice":"₹ 399",
+            "Offer":"22% off"
+        },
+        {
+            "id": "20",
+            "ProductURL":"./assets/img/1(8).png",
+            "ProductName":"Canon EOS EF 24-105mm f/4L is USM Camera Flower Lens Hood (55, Black).",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"17,896 Ratings",
+            "NewPrice":"₹ 340",
+            "OldPrice":"₹ 499",
+            "Offer":"48% off"
+        },
+        {
+            "id": "21",
+            "ProductURL":"./assets/img/001.png",
+            "ProductName":"Canon 58mm replacement Front Lens Caps  (Black, 58 mm).",
+            "StarsIcon":"fa-star",
+            "Rate":"4.2",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"2,096 Ratings",
+            "NewPrice":"₹ 265",
+            "OldPrice":"₹ 399",
+            "Offer":"30% off"
+        },
+        {
+            "id": "22",
+            "ProductURL":"./assets/img/002.png",
+            "ProductName":"SYGA Cleaning Kit for DSLR Cameras and Sensitive Lens Cleaner (Pack of 4).",
+            "StarsIcon":"fa-star",
+            "Rate":"4.1",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"5,576 Ratings",
+            "NewPrice":"₹ 289",
+            "OldPrice":"₹ 699",
+            "Offer":"61% off"
+        },
+        {
+            "id": "23",
+            "ProductURL":"./assets/img/003.png",
+            "ProductName":"Ketsaal Shoulder Backpack to Carry DSLR SLR Lens Camera Bag  (Purple).",
+            "StarsIcon":"fa-star",
+            "Rate":"3.9",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"3,539 Ratings",
+            "NewPrice":"₹ 589",
+            "OldPrice":"₹ 699",
+            "Offer":"10% off"
+        },
+        {
+            "id": "24",
+            "ProductURL":"./assets/img/004.png",
+            "ProductName":"SHOPEE Branded DSLR Cameras Lens Hood Filter 2/4/8/16 Kit (49 mm, Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.2",
+            "HalfStarIcon":"fa-star-half",
+            "Ratings":"196 Ratings",
+            "NewPrice":"₹ 331",
+            "OldPrice":"₹ 599",
+            "Offer":"66% off"
+        }
+    ],
+
+    "RelatedProduct": [
+       {
+        "id": "021",
+        "ProductURL":"./assets/img/rp1.png",
+        "ProductName":"Nikon Digital Camera Z5 Kit F/4-6.3 Lens (Black)",
+        "StarsIcon":"fa-star",
+        "Rate":"4.5",
+        "WishlistIcon":"favorite",
+        "Ratings":"17,999 Ratings",
+        "NewPrice":"₹ 1,51,025",
+        "OldPrice":"₹ 1,69,995",
+        "Offer":"48% off"
+       },
+       {
+        "id": "022",
+        "ProductURL":"./assets/img/rp2.png",
+        "ProductName":"Panasonic lumix FZ300 Digital Zoom lens (Black)",
+        "StarsIcon":"fa-star",
+        "Rate":"3.2",
+        "WishlistIcon":"favorite",
+        "Ratings":"7,896 Ratings",
+        "NewPrice":"₹ 55,906",
+        "OldPrice":"₹ 60,599",
+        "Offer":"48% off"
+       },
+       {
+        "id": "023",
+        "ProductURL":"./assets/img/rp3.png",
+        "ProductName":"Canon EOS R5 Mirrorless Camera IS STM Lens Kit",
+        "StarsIcon":"fa-star",
+        "Rate":"4.2",
+        "WishlistIcon":"favorite",
+        "Ratings":"12,196 Ratings",
+        "NewPrice":"₹ 1,15,999",
+        "OldPrice":"₹  1,26,999",
+        "Offer":"48% off"
+       },
+       {
+        "id": "024",
+        "ProductURL":"./assets/img/rp4.jpg",
+        "ProductName":"Nikon D750 Mirrorless Camera STM Lens (Black)",
+        "StarsIcon":"fa-star",
+        "Rate":"3.8",
+        "WishlistIcon":"favorite",
+        "Ratings":"12,196 Ratings",
+        "NewPrice":"₹ 63,999",
+        "OldPrice":"₹ 70,599",
+        "Offer":"48% off"
+       },
+       {
+        "id": "025",
+        "ProductURL":"./assets/img/1.png",
+        "ProductName":"Canon Camera EF-M15-45mm STM Lens (Black)",
+        "StarsIcon":"fa-star",
+        "Rate":"4.8",
+        "WishlistIcon":"favorite",
+        "Ratings":"5,236 Review",
+        "NewPrice":"₹ 57,890",
+        "OldPrice":"₹ 69,990",
+        "Offer":"33% off"
+    },
+    {
+        "id": "026",
+        "ProductURL":"./assets/img/101.png",
+        "ProductName":"Canon EOS 3000D DSLR Camera with Lens (Black)",
+        "StarsIcon":"fa-star",
+        "Rate":"4.2",
+        "WishlistIcon":"favorite",
+        "Ratings":"19,111 Ratings",
+        "NewPrice":"₹ 57,890",
+        "OldPrice":"₹ 69,990",
+        "Offer":"13% off"
+    }
+    ],
+
+    "ViewedItems":[
+        {
+            "id": "29",
+            "ProductURL":"./assets/img/101.png",
+            "ProductName":"Canon EOS 3000D DSLR Camera with 18 - 55 mm Lens  (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.4",
+            "WishlistIcon":"favorite",
+            "Ratings":"25,770 Ratings ",
+            "NewPrice":"₹ 30,999",
+            "OldPrice":"₹ 33,995",
+            "Offer":"8% off"
+        },
+        {
+            "id": "30",
+            "ProductURL":"./assets/img/102.png",
+            "ProductName":"SONY Alpha Mirrorless Camera with 16-50mm Zoom Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.6",
+            "WishlistIcon":"favorite",
+            "Ratings":"599 Ratings ",
+            "NewPrice":"₹ 82,990",
+            "OldPrice":"₹ 90,990",
+            "Offer":"12% off"
+        },
+        {
+            "id": "31",
+            "ProductURL":"./assets/img/103.png",
+            "ProductName":"SONY Alpha 7RM3 Mirrorless Camera Body Only  (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.4",
+            "WishlistIcon":"favorite",
+            "Ratings":"179 Ratings",
+            "NewPrice":"₹ 1,78,990",
+            "OldPrice":"₹ 2,37,490",
+            "Offer":"23% off"
+        },
+        {
+            "id": "32",
+            "ProductURL":"./assets/img/104.png",
+            "ProductName":"SONY Alpha 7M3K Mirrorless Camera with Zoom Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.5",
+            "WishlistIcon":"favorite",
+            "Ratings":"294 Ratings",
+            "NewPrice":"₹ 1,60,081",
+            "OldPrice":"₹ 1,82,490",
+            "Offer":"12% off"
+        },
+        {
+            "id": "33",
+            "ProductURL":"./assets/img/105.png",
+            "ProductName":"Canon EOS 1500D DSLR Camera Body+ 18-55 mm IS II Lens  (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.5",
+            "WishlistIcon":"favorite",
+            "Ratings":"14,269 Ratings",
+            "NewPrice":"₹ 36,410",
+            "OldPrice":"₹ 41,995",
+            "Offer":"19% off"
+        },
+        {
+            "id": "34",
+            "ProductURL":"./assets/img/106.png",
+            "ProductName":"SONY Alpha ILCE-7M2K Mirrorless Camera Body with Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.3",
+            "WishlistIcon":"favorite",
+            "Ratings":"689 Ratings",
+            "NewPrice":"₹ 83,999",
+            "OldPrice":"₹ 1,28,990",
+            "Offer":"34% off"
+        },
+        {
+            "id": "35",
+            "ProductURL":"./assets/img/107.png",
+            "ProductName":"NIKON Z 50 Mirrorless Camera Body with 16-50mm Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.4",
+            "WishlistIcon":"favorite",
+            "Ratings":"299 Ratings",
+            "NewPrice":"₹ 74,490",
+            "OldPrice":"₹ 85,995",
+            "Offer":"13% off"
+        },
+        {
+            "id": "36",
+            "ProductURL":"./assets/img/108.png",
+            "ProductName":"FUJIFILM X-S10 Mirrorless Camera Body with Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.9",
+            "WishlistIcon":"favorite",
+            "Ratings":"179 Ratings",
+            "NewPrice":"₹ 1,25,499",
+            "OldPrice":"₹ 1,34,999",
+            "Offer":"7% off"
+        },
+        {
+            "id": "0021",
+            "ProductURL":"./assets/img/rp1.png",
+            "ProductName":"Nikon Digital Mirrorless Camera Z5 Kit F/4-6.3 Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"4.5",
+            "WishlistIcon":"favorite",
+            "Ratings":"17,999 Ratings",
+            "NewPrice":"₹ 1,51,025",
+            "OldPrice":"₹ 1,69,995",
+            "Offer":"48% off"
+           },
+           {
+            "id": "0022",
+            "ProductURL":"./assets/img/rp2.png",
+            "ProductName":"Panasonic lumix FZ300 Digital Camera with Zoom lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"3.2",
+            "WishlistIcon":"favorite",
+            "Ratings":"7,896 Ratings",
+            "NewPrice":"₹ 55,906",
+            "OldPrice":"₹ 60,599",
+            "Offer":"48% off"
+           },
+           {
+            "id": "0023",
+            "ProductURL":"./assets/img/rp3.png",
+            "ProductName":"Canon EOS R5 Mirrorless Camera IS with STM Lens Kit",
+            "StarsIcon":"fa-star",
+            "Rate":"4.2",
+            "WishlistIcon":"favorite",
+            "Ratings":"12,196 Ratings",
+            "NewPrice":"₹ 1,15,999",
+            "OldPrice":"₹  1,26,999",
+            "Offer":"48% off"
+           },
+           {
+            "id": "0024",
+            "ProductURL":"./assets/img/rp4.jpg",
+            "ProductName":"Nikon D750 Mirrorless Camera with STM Lens (Black)",
+            "StarsIcon":"fa-star",
+            "Rate":"3.8",
+            "WishlistIcon":"favorite",
+            "Ratings":"12,196 Ratings",
+            "NewPrice":"₹ 63,999",
+            "OldPrice":"₹ 70,599",
+            "Offer":"48% off"
+           }
+    ],
+
+    "CartItems":[
+        {
+            "id": "25",
+            "CartTitle":"Shopping Cart",
+            "ProductURL":"./assets/img/rp1.png",
+            "ProductName":"Nikon Digital Camera Z5 Kit F/4 - 6.3 Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "WishlistIcon":"fa-heart",
+            "DeleteIcon":"fa-trash",
+            "NewPrice":"₹ 1,23,599",
+            "OldPrice":"₹ 1,54,932",
+            "Offer":"50% off",
+            "DeliveryDate":"Delivery by Sun Dec 11 | Free",
+            "S":"₹40" 
+          
+        },
+        {
+            "id": "26",
+            "ProductURL":"./assets/img/rp3.png",
+            "ProductName":"Canon EOS DSLR Camera with Single Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "WishlistIcon":"fa-heart",
+            "DeleteIcon":"fa-trash",
+            "NewPrice":"₹ 65,599",
+            "OldPrice":"₹ 74,932",
+            "Offer":"50% off",
+            "DeliveryDate":"Delivery by Fri Dec 16 | Free",
+            "S":"₹40" 
+        },
+        {
+            "id": "27",
+            "ProductURL":"./assets/img/rp2.png",
+            "ProductName":"Panasonic lumix FZ300 Digital Camera DC (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "WishlistIcon":"fa-heart",
+            "DeleteIcon":"fa-trash",
+            "NewPrice":"₹ 59,999",
+            "OldPrice":"₹ 64,499",
+            "Offer":"20% off",
+            "DeliveryDate":"Delivery by Fri Dec 23 | Free",
+            "S":"₹40" 
+        },
+        {
+            "id": "28",
+            "ProductURL":"./assets/img/106.png",
+            "ProductName":"SONY Alpha Mirrorless Camera with Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "WishlistIcon":"fa-heart",
+            "DeleteIcon":"fa-trash",
+            "NewPrice":"₹ 83,999",
+            "OldPrice":"₹ 1,28,990",
+            "Offer":"34% off",
+            "DeliveryDate":"Delivery by Fri Dec 25 | Free",
+            "S":"₹40" 
+        }
+    ],
+
+    "PriceItems":[
+        {
+            "Summary":"Price Summary",
+            "List":"Price (2 items)",
+            "Discount":"Price Discount",
+            "Tax":"Estimated Tax",
+            "Charge":"Delivery Charge",
+            "Total":"Total Price",
+            "ProductList":"₹ 2,47,197",
+            "ProductDiscount":"₹ -6,388",
+            "ProductTax":"+100",
+            "Delivery":"FREE",
+            "TotalPrice":"₹ 2,40,909",
+            "Alert":"You will save ₹6,388 on this order"  
+        }
+    ],
+
+    "ThumbnailItems":[
+        {
+            "id":"29",
+            "ImageSrc":"./assets/img/1-1.png",
+            "slide":"0"
+        },
+        {
+            "id":"30",
+            "ImageSrc":"./assets/img/1-2.png",
+            "slide":"1"
+        },
+        {
+            "id":"31",
+            "ImageSrc":"./assets/img/1-3.png",
+            "slide":"2"
+        },
+        {
+            "id":"32",
+            "ImageSrc":"./assets/img/1-4.png",
+            "slide":"3"
+        },
+        {
+            "id":"33",
+            "ImageSrc":"./assets/img/1-5.png",
+            "slide":"4"
+        }
+
+    ],
+
+    "ProductItems":[
+        {
+            "id":"34",
+            "ImageSrc":"./assets/img/1-1.png"
+        },
+        {
+            "id":"35",
+            "ImageSrc":"./assets/img/1-2.png"
+        },
+        {
+            "id":"36",
+            "ImageSrc":"./assets/img/1-3.png"
+        },
+        {
+            "id":"37",
+            "ImageSrc":"./assets/img/1-4.png"
+        },
+        {
+            "id":"38",
+            "ImageSrc":"./assets/img/1-5.png"
+        }
+
+    ],
+
+    "Wishlist":[
+        {
+            "id": "39",
+            "CartTitle":"Wishlist",
+            "ProductURL":"./assets/img/rp1.png",
+            "ProductName":"Nikon Digital Camera Z5 Kit F/4 - 6.3 Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "DeleteIcon":"fa-trash",
+            "CartIcon":"fa-cart-shopping",
+            "NewPrice":"₹ 1,23,599",
+            "OldPrice":"₹ 1,54,932",
+            "Offer":"50% off"         
+        },
+        {
+            "id": "40",
+            "ProductURL":"./assets/img/rp3.png",
+            "ProductName":"Canon EOS DSLR Camera with Single Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "DeleteIcon":"fa-trash",
+            "CartIcon":"fa-cart-shopping",
+            "NewPrice":"₹ 65,599",
+            "OldPrice":"₹ 74,932",
+            "Offer":"50% off"
+        },
+        {
+            "id": "41",
+            "ProductURL":"./assets/img/rp2.png",
+            "ProductName":"Panasonic lumix FZ300 Digital Camera DC (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "DeleteIcon":"fa-trash",
+            "CartIcon":"fa-cart-shopping",
+            "NewPrice":"₹ 59,999",
+            "OldPrice":"₹ 64,499",
+            "Offer":"20% off"
+        },
+        {
+            "id": "42",
+            "ProductURL":"./assets/img/106.png",
+            "ProductName":"SONY Alpha Mirrorless Camera with Lens (Black)",
+            "Shipping":"FREE Shipping",
+            "Seller":"Seller: TB Smart",
+            "DeleteIcon":"fa-trash",
+            "CartIcon":"fa-cart-shopping",
+            "NewPrice":"₹ 83,999",
+            "OldPrice":"₹ 1,28,990",
+            "Offer":"34% off" 
+        }
+    ]
+    
+}

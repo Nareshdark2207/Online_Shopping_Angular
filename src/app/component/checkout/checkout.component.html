@@ -1,0 +1,205 @@
+<app-preloader *ngIf="loader"></app-preloader>
+<div class="container">
+
+    <div class="progress-bar spacing">
+        <div class="progress-step is-active">
+          <div class="step-count"><mat-icon class="nav-icon">shopping_cart</mat-icon></div>
+          <div class="step-description">Add Cart</div>
+        </div>
+        <div class="progress-step is-active">
+          <div class="step-count active"><mat-icon class="nav-icon"> place</mat-icon></div>
+          <div class="step-description">Address</div>
+        </div>
+        <div class="progress-step is-active">
+          <div class="step-counter"><mat-icon class="nav-icon">payment</mat-icon></div>
+          <div class="step-description">Pay and Checkout</div>
+        </div>
+    </div>
+
+    <div class="d-flex dflex">
+        <div class="img-thumb mt-1">
+          <img src="./assets/img/check.png" class="img-fluid" alt="...">
+        </div>
+        <div class="ms-3 mb-2">
+            <h2>Order Placed</h2>
+            <p>Your 4 item will be delivered by Tue, Dec 18th '22.</p>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2 ">
+            <div class="card">
+                <h2>Delivery Address</h2>
+                <h5>Naresh Lalit</h5>
+                <p>16/78 shenoy nagar,near koyembedu bus stand chennai,Tamilnadu Pincode-600004</p>
+                <h4 class="mt-1">Phone number: <span>9632587410</span></h4>
+                <p class="mt-2 mb-2 track">This order is also tracked by 8610075097</p>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2">
+            <div class="card">
+                <h2>Billing Address</h2>
+                <h5>Naresh Lalit</h5>
+                <p class="addss">16/78 shenoy nagar, amijikarai near koyembedu bus stand chennai,Tamilnadu<br>Pincode-600004</p>
+                <h4 class="mt-2 mb-2">Phone number: <span>9632587410</span></h4>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-2">
+			<div class="card" *ngFor="let price of PriceItems let i= index" >
+				<div class="row gutter">
+					<h2 class="psummary">{{price.Summary}}</h2>
+					<div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-6">
+						<h5>{{price.List}}</h5>
+						<h5>{{price.Discount}}</h5>
+						<h5>{{price.Tax}}</h5>
+						<h5>{{price.Charge}}</h5> </div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+						<h5>{{price.ProductList}}</h5>
+						<h5>{{price.ProductDiscount}}</h5>
+						<h5>{{price.ProductTax}}</h5>
+						<h5 class="free">{{price.Delivery}}</h5> </div>
+				</div>				
+					<hr class="underline"> 
+				<div class="row styling">
+					<div class="col-xl-9 col-lg-9 col-md-6 col-sm-6 col-6">
+						<p>{{price.Total}}</p>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+						<p class="prix">{{price.TotalPrice}}</p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <div class="card time-line-box">
+        <div class="text-center">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="timestamp"><span class="date">Order Confirmed</span></div>
+                    <div class="status"><span>Mon, 20th Dec</span></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timestamp1"><span class="date">Shipped</span></div>
+                    <div class="status1"><span>Sat, 5th Dec</span></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timestamp2"><span class="date">Out For Delivery</span></div>
+                    <div class="status2"><span>Sun, 6th Dec</span></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timestamp3"><span class="date">Delivered</span></div>
+                    <div class="status3"><span><i class="fa-solid fa-truck"></i>&nbsp; Estimated date : Tue, 8th</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let cart of CartItems let i= index" >
+                    <div class="d-flex dspace">                       
+                            <img class="img-fluid img-wrap" src="{{cart.ProductURL}}" alt="art image">                                        
+                            <div class="text-justify">
+                                <div class="d-flex flows">
+                                    <p class="pl-1">OrderId : 012-4890-2831</p>
+                                    <p class="pl-1 date">Delivered on Dec 20</p>
+                                </div>
+                                <div class="d-flex flow">
+                                    <h3 class="cart-title">{{cart.ProductName}}</h3>  
+                                </div>                              
+                                <p class="seller">{{cart.Seller}}</p>           
+                                <div class="d-flex product-price"> 
+                                    <span class="new-price"> {{cart.NewPrice}} </span> 
+                                   <span class="offer">| 1 Offer Applied <i class="fa-solid fa-circle-question"></i></span>                                   
+                                </div>
+                                <div class="d-flex flowing">
+                                    <span class="span"><i class="fa-solid fa-circle-question"></i> Need Help ?</span>
+                                    <span class="span"><i class="fa-solid fa-star"></i> Rate & Review Product </span> 
+                                </div>
+                            </div>                       
+                    </div>
+                </div>
+                <div class="text-end mt-4 mb-3">
+                    <button type="button" class="btn btn-save"><i class="fa-solid fa-location-dot"></i> &nbsp;Track your Order</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="product-detail mt-4">
+        <h2>Recommended based on your shopping</h2>
+        <!--Desktop View-->
+        <div class="container d-view">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <!-- Section-1 -->
+                            <div class="row row-gutter">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12" *ngFor="let addonproduct of AddOnProduct.slice(0,6) let i= index">
+                                    <!-- Slider 1 -->
+                                    <div class="cards">
+                                        <div class="text-center">
+                                            <div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+                                        </div>
+                                        <div>
+                                            <div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+                                            <div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                                <span>{{addonproduct.Ratings}}</span> </span>
+                                            <div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <!-- Section-1 -->
+                            <div class="row row-gutter">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6" *ngFor="let addonproduct of AddOnProduct.slice(6,12) let i= index">
+                                    <!-- Slider 1 -->
+                                    <div class="card">
+                                        <div class="text-center">
+                                            <div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+                                        </div>
+                                        <div>
+                                            <div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+                                            <div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                                <span>{{addonproduct.Ratings}}</span> </span>
+                                            <div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+            </div>
+        </div>
+        <!--Mobile View-->
+		<div class="container m-view">
+			<div class="scrolling-wrapper d-flex flex-row flex-nowrap">
+				<div class="col-sm-12 col-12 pr-s" *ngFor="let addonproduct of AddOnProduct let i= index">
+				<!-- Slider 1 -->
+					<div class="cards">
+						<div class="text-center">
+							<div class="product-img-wrap"> <img class="img-fluid" src="{{addonproduct.ProductURL}}"> </div>
+						</div>
+						<div>
+						<div> <a class="product-heads">{{addonproduct.ProductName}} </a> </div>
+							<div class="product-rating mt-2"> <span>{{ addonproduct.Rate }}</span> <i class="fas {{addonproduct.StarsIcon}}"></i> </div> <span class="rating-text">
+                            <span>{{addonproduct.Ratings}}</span> </span>
+								<div class="product-addonprice"> <span class="addon-price"> {{addonproduct.NewPrice}} </span> <span> <s class = "on-price">{{addonproduct.OldPrice}}</s></span> <span class="offer">{{addonproduct.Offer}}</span> </div>
+							</div>
+						</div>					
+				</div>
+			</div>
+		</div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

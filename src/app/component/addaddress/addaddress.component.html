@@ -1,0 +1,127 @@
+<div class="container">
+    <div class="progress-bar spacing">
+        <div class="progress-step is-active">
+          <div class="step-count"><mat-icon class="nav-icon">shopping_cart</mat-icon></div>
+          <div class="step-description">Add Cart</div>
+        </div>
+        <div class="progress-step">
+          <div class="step-count"><mat-icon class="nav-icon"> place</mat-icon></div>
+          <div class="step-description">Address</div>
+        </div>
+        <div class="progress-step">
+          <div class="step-count"><mat-icon class="nav-icon">payment</mat-icon></div>
+          <div class="step-description">Pay and Checkout</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-justify">
+            <h2>Add Address</h2>
+        
+            <form name="address" class="contact-inform form">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="name" class="form-input" placeholder="none" required>
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="number" name="mobilenumber" class="form-input" placeholder="none" required>
+                                <label for="mobilenumber" class="form-label">Mobile Number</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="number" name="code" class="form-input" placeholder="none" required>
+                                <label for="code" class="form-label">Pincode</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="address" class="form-input" placeholder="none" required>
+                                <label for="address" class="form-label">Flat, House no, Apartment, Company </label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="area" class="form-input" placeholder="none" required>
+                                <label for="area" class="form-label">Area, Street, Sector, Village</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="landmark" class="form-input" placeholder="none" required>
+                                <label for="landmark" class="form-label">Landmark</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="country" class="form-input" placeholder="none" required>
+                                <label for="country" class="form-label">Country</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="state" class="form-input" placeholder="none" required>
+                                <label for="state" class="form-label">State</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="form-control">
+                                <input type="text" name="city" class="form-input" placeholder="none" required>
+                                <label for="city" class="form-label">City/District/Town</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="addresstype">Address Type </p>
+                    <div class="mention">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Home <span>( Delivery between 7AM - 9PM )</span>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Work <span>( Delivery between 10AM - 5PM )</span>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                            Others
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checklist">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Make this my default address
+                            </label>
+                        </div>
+                        <div class="form-check mt-1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                            <label class="form-check-label" for="defaultCheck2">
+                                Billing address same as Shipping address
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-save" routerLink="/selectaddress" >Save </button>
+                        <button type="button" class="btn btn-outline" routerLink="/selectaddress">Cancel</button>
+                    </div>
+            </form>
+        </div> 
+    </div>
+</div>
